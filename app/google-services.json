@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "394694246254",
+    "firebase_url": "https://sarzamin-tejarat.firebaseio.com",
+    "project_id": "sarzamin-tejarat",
+    "storage_bucket": "sarzamin-tejarat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394694246254:android:3f2f6f0c7b200b08",
+        "android_client_info": {
+          "package_name": "ir.maherkala.maherkala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394694246254-f73c6dc3q7ntgpeetq34ectnkjlted12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ir.maherkala.maherkala",
+            "certificate_hash": "577a02c1e2f4f241d35d1afc910e0afdb8308a3e"
+          }
+        },
+        {
+          "client_id": "394694246254-0mtfslkg8dibjon81ulvum2j9jc7sgsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJRFqW4BI-E3Ae2gWYUak36SOoa77iyg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394694246254-0mtfslkg8dibjon81ulvum2j9jc7sgsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

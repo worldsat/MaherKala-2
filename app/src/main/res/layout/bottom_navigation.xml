@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/buttom_5"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:background="@color/dark_orange"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_nav_item_bg"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:itemIconTint="@drawable/bottom_nav_item_bg"
+            app:itemTextColor="@drawable/bottom_nav_item_bg"
+            app:menu="@menu/menu_main">
+
+
+        </android.support.design.widget.BottomNavigationView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bottom_nav_back"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/dark_orange"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/basket_float"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/floating" />
+
+        <TextView
+            android:id="@+id/badgeCounter_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/item_count"
+            android:fontFamily="@font/iransans"
+            android:gravity="center"
+            android:maxHeight="18dp"
+            android:minHeight="15dp"
+            android:minWidth="16dp"
+            android:text="30"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:background="@color/dark_orange"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomnav1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_nav_item_bg"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:itemIconTint="@drawable/bottom_nav_item_bg"
+            app:itemTextColor="@drawable/bottom_nav_item_bg"
+            app:menu="@menu/buttom_menu2">
+
+
+        </android.support.design.widget.BottomNavigationView>
+    </LinearLayout>
+
+</LinearLayout>

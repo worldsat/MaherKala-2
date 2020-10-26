@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview0"
+    android:layout_width="133dp"
+    android:layout_height="210dp"
+
+    android:layout_marginEnd="3dp"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    tools:layout_editor_absoluteY="2dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+
+        android:layout_marginStart="3dp"
+        android:layout_weight="0.98"
+        android:background="@drawable/background_item_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingPrefix">
+
+
+        <ImageView
+            android:id="@+id/pic_show"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic_show">
+
+
+            <TextView
+                android:id="@+id/Date_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransanslight"
+                android:gravity="center_vertical"
+                android:maxLength="50"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="عنوان"
+                android:textColor="@color/black"
+                android:textDirection="rtl"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/discount_show"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/iransanslight"
+                android:gravity="fill_vertical"
+
+                android:text="تخفیف"
+                android:textColor="@color/red"
+                android:textDirection="rtl"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/fee_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iransanslight"
+                android:text="قیمت"
+                android:textColor="@color/green_dark"
+                android:textDirection="rtl"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/off_show"
+        android:layout_width="110dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/pink_alpha"
+        android:fontFamily="@font/iransanslight"
+        android:gravity="center"
+        android:rotation="-45"
+        android:text="تخفیف 10 %"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/off_day"
+        android:layout_width="150dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/pink_alpha"
+        android:fontFamily="@font/iransanslight"
+        android:gravity="center"
+        android:rotation="-45"
+        android:text="10 روز دیگر"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+</android.support.constraint.ConstraintLayout>
+

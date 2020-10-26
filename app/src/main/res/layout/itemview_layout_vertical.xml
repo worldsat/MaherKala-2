@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/background_item_horizontal"
+    android:orientation="horizontal"
+    tools:ignore="MissingPrefix">
+
+
+    <ImageView
+        android:id="@+id/pic_show"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/intro_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/Date_show"
+            android:fontFamily="@font/iransanslight"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="توضیحات"
+            android:textColor="@color/gray"
+            android:textDirection="rtl"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/Date_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iransanslight"
+            android:gravity="center_vertical"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:text="عنوان"
+            android:textColor="@color/black"
+            android:textDirection="rtl"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/fee_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/iransans"
+            android:text="قیمت"
+            android:textAlignment="textEnd"
+            android:textColor="@color/green_dark"
+            android:textDirection="rtl"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/discount_show"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fee_show"
+
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/iransans"
+            android:gravity="bottom"
+            android:text="تخفیف"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textDirection="rtl"
+            android:textSize="11sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,77 @@
+<resources>
+    <string name="MaherKala">سرزمین تجارت</string>
+    <string name="loginToApp">ورود به سرزمین تجارت</string>
+    <string name="title_mainActivity">سرزمین تجارت</string>
+    <string name="search">جستجو در سرزمین تجارت</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="navigation_drawer_open">close</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="title_activity_basket_activity">Basket_activity</string>
+        <!--<string name="site">http://5.9.213.180</string>-->
+        <string name="site">http://www.sarzamintejarat.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="special_sell">تخفيف شگفت انگيز</string>
+    <string name="new_Item">جدیدترین محصولات</string>
+    <string name="all_Item">نمایش همه</string>
+    <string name="drawer1">درباره ما</string>
+    <string name="drawer2">تماس به ما</string>
+    <string name="drawer3">درباره طراح برنامه</string>
+    <string name="contact1">09132243308</string>
+    <string name="search_hint">جستجوی کالای مورد نظر</string>
+
+    <string name="currency"> \u0020تومان\u0020</string>
+    <string name="comment_hint"> نظر و نقد شما</string>
+    <string name="set_scroll">امتیاز شما به این محصول</string>
+    <string name="save">ثبت</string>
+    <string name="editProfile">ویرایش پروفایل</string>
+    <string name="addCard">اضافه شدن به سبد خرید</string>
+    <string name="warning">توجه !!!</string>
+    <string name="warning_message">لطفا در ابتدا وارد حساب کاربری خود شوید</string>
+    <string name="SignupLogin">ورود/ ثبت نام</string>
+    <string name="cancell">انصراف</string>
+    <string name="sign_name">نام و نام خانوادگی</string>
+    <string name="sign_mobile">شماره همراه</string>
+    <string name="sign_tell">شماره ثابت</string>
+    <string name="sign_address">آدرس</string>
+    <string name="sign_postal">کد پستی</string>
+    <string name="sign_password">رمز عبور</string>
+    <string name="sign_email">ایمیل</string>
+    <string name="set_email">لطفا ایمیل خود وارد نمائید</string>
+
+    <string name="basket_empty">سبد خرید شما خالی است !!!</string>
+    <string name="basket_delete">محصول شما از سبد خرید حذف شد</string>
+    <string name="basket_deleted">محصول شما قبلا از سبد خرید حذف شده است</string>
+    <string name="snackPlusItem">محصول به سبد خرید اضافه شد</string>
+    <string name="snackNoItem">موجودی انبار کافی نمی باشد</string>
+    <string name="rateOk">رای شما ثبت شد</string>
+    <string name="rateNo">شما قبلا به این نظر رای داده اید</string>
+    <string name="rateNo2">شما قبلا به این محصول رای داده اید</string>
+    <string name="commmentOk">نظر شما ثبت شد</string>
+    <string name="noProduct">این کالا وجود ندارد</string>
+    <string name="noQuantity">موجودی این کالا در انبار کافی نیست</string>
+    <string name="fullText">لطفا متن مورد نظر خود را وارد کنید</string>
+    <string name="shortText">لطفا طول کلمه مورد نظر  3 حرف یا بیشتر باشد</string>
+    <string name="error_email">لطفا ایمیل خود را بطور صحیح وارد نمائید</string>
+    <string name="error_name">لطفا  نام وارد نمائید</string>
+    <string name="error_name_short">لطفا نام مورد نظر  3 حرف یا بیشتر باشد</string>
+    <string name="error_address">لطفا آدرس خود را وارد نمائید</string>
+    <string name="error_address_short">لطفا آدرس مورد نظر 10 حرف یا بیشتر باشد</string>
+    <string name="error_tell">لطفا تلفن خود را بطور صحیح وارد نمائید</string>
+    <string name="error_mobile">لطفا موبایل خود را بطور صحیح وارد نمائید</string>
+    <string name="error_postal">لطفا کد پستی خود را بطور صحیح وارد نمائید</string>
+    <string name="error_password">لطفا رمز خود را بطور صحیح وارد نمائید</string>
+    <string name="error_password_short">لطفا رمز مورد نظر  6 حرف یا بیشتر باشد</string>
+    <string name="error_email_repetetive">ایمیل وارد شده قبلا ثبت شده است</string>
+    <string name="error_mobile_repetetive">شماره همراه وارد شده قبلا ثبت شده است</string>
+    <string name="signupOk">ثبت نام با موفقیت انجام شد</string>
+    <string name="emailOk">ایمیل شما با موفقیت ثبت شد</string>
+    <string name="emailError">خطا در ثبت ایمیل</string>
+    <string name="editProfileOk">ویرایش با موفقیت انجام شد</string>
+    <string name="signupButton">ایجاد حساب کاربری</string>
+    <string name="editProfileButton">ویرایش حساب کاربری</string>
+    <string name="signupExplainHint">لطفا تمام شرایط و مراحل کاری خود را در این قسمت  بیان کنید</string>
+    <string name="RecoveryPassword">رمز عبور، به ایمیل شما ارسال خواهد شد</string>
+
+</resources>

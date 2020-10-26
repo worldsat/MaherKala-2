@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity">
+
+    <item
+        android:id="@+id/action_main_menu"
+        android:title="صفحه اصلی"
+        android:icon="@mipmap/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_category"
+        android:title="محصولات"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        app:showAsAction="ifRoom" />
+</menu>

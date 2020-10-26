@@ -1,0 +1,64 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorPrimaryDark">@color/actionBar</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- tanzim toggle sefid -->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+    <item name="fontFamily">@font/iransans</item>
+    </style>
+    <!-- font trafic -->
+    <style name="font_main_page" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/btraffic</item>
+    </style>
+    <!--tanzim rang progress bar cirlce-->
+    <style name="BlueAccent" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/toolbar</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Button.green" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#4caf50</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Button.blue" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#175fda</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppTheme.Button.orange" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#f57c00</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyRatingBarTwo" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="colorControlNormal">#f57c00</item>
+        <item name="colorControlActivated">#c51162</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/light_orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+    <!-- active thumb & track color (30% transparency) -->
+    <item name="colorControlActivated">@color/green_dark</item>
+    </style>
+</resources>

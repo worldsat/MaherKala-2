@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.maherkala.maherkala">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@mipmap/ic_launcher" />
+    <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+        android:resource="@color/blue_sky" />
+
+
+    <application
+        android:name=".otherClass.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/MaherKala"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BasketActivity" />
+        <activity android:name=".Activity.ProductActivity" />
+        <activity android:name=".Activity.CategoryMiddleActivity" />
+        <activity android:name=".Activity.ItemActivity" />
+        <activity android:name=".Activity.CommentActivity" />
+        <activity android:name=".Activity.AboutDesignerActivity" />
+        <activity android:name=".Activity.ComparisonSearchActivity" />
+        <activity android:name=".Activity.ComparisonActivity" />
+        <activity android:name=".Activity.ResultAdvancedSearchActivity" />
+        <activity android:name=".Activity.AdvancedSearchActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.Login2Activity" />
+        <activity android:name=".Activity.SignupActivity" />
+        <activity android:name=".Activity.ForgetPassActivity" />
+        <activity android:name=".Activity.SignupSenfActivity" />
+        <activity android:name=".Activity.NewsActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.NewsFullActivity" />
+        <activity android:name=".Activity.AboutUsActivity" />
+        <activity android:name=".Activity.ContactUsActivity" />
+        <activity android:name=".Activity.HistoryItemBasketActivity" />
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="ir.maherkala.maherkala"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.InternetActivity"></activity>
+    </application>
+
+</manifest>

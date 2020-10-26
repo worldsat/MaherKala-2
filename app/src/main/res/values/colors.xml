@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#172681</color>
+    <color name="actionBar">#891e21</color>
+
+    <color name="colorAccent">#ff4081</color>
+    <color name="white">#ffffff</color>
+    <color name="toolbar">#da1e27</color>
+    <color name="red">#ff000d</color>
+    <color name="black">#000000</color>
+    <color name="dark_orange">#dc6f2c</color>
+    <color name="orange">#ff8800</color>
+    <color name="pink">#d81b60</color>
+    <color name="blue_sky">#1e88e5</color>
+    <color name="blue_sky2">#fdb86f</color>
+    <color name="pink_alpha">#e3d81b60</color>
+    <color name="light_orange">#ffdab3</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="light_gray">#e9e9e9</color>
+    <color name="green_dark">#2b8031</color>
+    <color name="stroke_item_horizontal">#c4c4c4</color>
+    <color name="bottom_nav_back">#b91722</color>
+    <color name="bottom_nav_clicked">#636da6</color>
+    <color name="bottom_nav_title">#ffffff</color>
+    <color name="bottom_nav_icon">#ffffff</color>
+
+</resources>
