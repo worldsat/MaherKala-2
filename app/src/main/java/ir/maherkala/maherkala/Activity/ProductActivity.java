@@ -111,10 +111,10 @@ public class ProductActivity extends AppCompatActivity {
         } else {
             BadgeCounter.setVisibility(View.GONE);
         }
-        getToken token = new getToken();
-        if (!token.Ok(ProductActivity.this)) {
-            BadgeCounter.setVisibility(View.GONE);
-        }
+//        getToken token = new getToken();
+//        if (!token.Ok(ProductActivity.this)) {
+//            BadgeCounter.setVisibility(View.GONE);
+//        }
         LinearLayout backButton = findViewById(R.id.backButton);
         //  backButton.setVisibility(View.GONE);
         // set CalculateBasket icon button

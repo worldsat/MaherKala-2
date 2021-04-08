@@ -78,6 +78,7 @@
             android:id="@+id/name7"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
             android:fontFamily="@font/iransans"
             android:gravity="center"
             android:text="رمز جدید:"
@@ -85,7 +86,8 @@
             android:textDirection="rtl"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/passwordEdt"
-            app:layout_constraintStart_toStartOf="@+id/name2"
+            app:layout_constraintEnd_toStartOf="@+id/passwordEdt"
+            app:layout_constraintStart_toStartOf="@+id/name6"
             app:layout_constraintTop_toTopOf="@+id/passwordEdt"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -298,8 +300,8 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginEnd="20dp"
             android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/iransans"
             android:gravity="center"
             android:text="نام: "

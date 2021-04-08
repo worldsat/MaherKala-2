@@ -97,7 +97,7 @@
 
             android:gravity="center_vertical"
             android:singleLine="true"
-            android:text="ماهر کالا"
+            android:text="کتاب دانش"
             android:textColor="#ffffff"
             android:textDirection="rtl"
             android:textSize="14sp"

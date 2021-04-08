@@ -20,6 +20,7 @@ public class SetterGetterBill {
         Bill = context.getSharedPreferences("Bill", 0);
         PriceItem = Bill.getString("totalItem", "0");
 
+        Bill.edit().putString("PriceItem", PriceItem).apply();
         return PriceItem;
     }
 

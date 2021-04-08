@@ -34,6 +34,7 @@ import com.nineoldandroids.view.ViewHelper;
 import java.text.DecimalFormat;
 
 import ir.maherkala.maherkala.AlertDialog.LoginSignupAlert;
+import ir.maherkala.maherkala.Engine.ManagementBasket;
 import ir.maherkala.maherkala.Engine.SetterGetterNumberOrder;
 import ir.maherkala.maherkala.Engine.SnakBar;
 import ir.maherkala.maherkala.R;
@@ -236,10 +237,10 @@ public class ItemActivity extends AppCompatActivity implements ObservableScrollV
         } else {
             BadgeCounter.setVisibility(View.GONE);
         }
-        getToken token = new getToken();
-        if (!token.Ok(ItemActivity.this)) {
-            BadgeCounter.setVisibility(View.GONE);
-        }
+//        getToken token = new getToken();
+//        if (!token.Ok(ItemActivity.this)) {
+//            BadgeCounter.setVisibility(View.GONE);
+//        }
         ImageView basket_icon_bar = findViewById(R.id.basket_icon);
 
         basket_icon_bar.setOnClickListener(new View.OnClickListener() {
@@ -260,16 +261,22 @@ public class ItemActivity extends AppCompatActivity implements ObservableScrollV
             public void onClick(View v) {
                 String ID = address.getString("Id_item");
 
-                getToken token = new getToken();
-                LoginSignupAlert loginAlert = new LoginSignupAlert();
+//                getToken token = new getToken();
+//                LoginSignupAlert loginAlert = new LoginSignupAlert();
+//
+//                if (token.Ok(ItemActivity.this)) {
+//                    PlusItemBasket plusItemBasket = new PlusItemBasket();
+//                    plusItemBasket.setItem(ItemActivity.this, progressBarPlus, ID, plus, BadgeCounter);
+//                } else {
+//                    loginAlert.alertShow(ItemActivity.this, ItemActivity.class);
+//                }
+                ManagementBasket managementBasket = new ManagementBasket(ItemActivity.this);
+                managementBasket.insertProduct(ID,1);
 
-                if (token.Ok(ItemActivity.this)) {
-                    PlusItemBasket plusItemBasket = new PlusItemBasket();
-                    plusItemBasket.setItem(ItemActivity.this, progressBarPlus, ID, plus, BadgeCounter);
-                } else {
-                    loginAlert.alertShow(ItemActivity.this, ItemActivity.class);
-                }
-
+                SetterGetterNumberOrder setterGetter = new SetterGetterNumberOrder(ItemActivity.this);
+                setterGetter.setNumberOrder("1","+");
+                BadgeCounter.setText(setterGetter.getNumberOrder());
+                BadgeCounter.setVisibility(View.VISIBLE);
 
             }
 

@@ -21,13 +21,20 @@ import android.widget.TextView;
 import com.afollestad.materialdialogs.MaterialDialog;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
+import ir.maherkala.maherkala.Activity.BasketMiddleActivity;
+import ir.maherkala.maherkala.Activity.ItemActivity;
 import ir.maherkala.maherkala.Activity.LoginActivity;
 import ir.maherkala.maherkala.Activity.MainActivity;
+import ir.maherkala.maherkala.AlertDialog.LoginSignupAlert;
+import ir.maherkala.maherkala.Engine.ManagementBasket;
 import ir.maherkala.maherkala.Engine.SetterGetterBill;
 import ir.maherkala.maherkala.R;
 import ir.maherkala.maherkala.Volley.getBasket;
+import ir.maherkala.maherkala.Volley.getBasket2;
 import ir.maherkala.maherkala.Volley.getToken;
+import ir.maherkala.maherkala.Volley.setBasket2;
 import ir.maherkala.maherkala.Volley.setFinalizeBasket;
 
 /**
@@ -87,20 +94,31 @@ public class BasketFragment extends Fragment {
         });
 
         //end Check Login
-        getToken token = new getToken();
-
-        if (token.Ok(getActivity())) {
-            getBasket getBasket = new getBasket();
-            getBasket.get_Items(getActivity(), progressBar, recyclerViewlist, emptyText, BasketLayout, BillLayout, totalPriceImpure, totalPricePure);
-
-        } else {
+//        getToken token = new getToken();
+//
+//        if (token.Ok(getActivity())) {
+//            getBasket getBasket = new getBasket();
+//            getBasket.get_Items(getActivity(), progressBar, recyclerViewlist, emptyText, BasketLayout, BillLayout, totalPriceImpure, totalPricePure);
+//
+//        } else {
+//            setHiddenLayout(getActivity());
+//            emptyText.setVisibility(View.VISIBLE);
+//            loginBasketBtn.setVisibility(View.VISIBLE);
+//
+//        }
+        ManagementBasket managementBasket = new ManagementBasket(getActivity());
+        //end check Login
+        ArrayList<String> idProducts = managementBasket.getProducts();
+        if (idProducts.size() == 0) {
             setHiddenLayout(getActivity());
             emptyText.setVisibility(View.VISIBLE);
-            loginBasketBtn.setVisibility(View.VISIBLE);
+
+        } else {
+
+            getBasket2 getBasket2 = new getBasket2();
+            getBasket2.get_Items(getActivity(), managementBasket.getProducts(), progressBar, recyclerViewlist, emptyText, BasketLayout, BillLayout, totalPriceImpure, totalPricePure);
 
         }
-        //end check Login
-
 
         SetterGetterBill setterGetterBill = new SetterGetterBill();
         str = formatter.format(Long.valueOf(setterGetterBill.getPriceItem(getActivity()))) + getActivity().getString(R.string.currency);
@@ -111,18 +129,30 @@ public class BasketFragment extends Fragment {
             public void onClick(View v) {
 
 
-                setFinalizeBasket setFinalizeBasket = new setFinalizeBasket();
-                setFinalizeBasket.setFinalize(getActivity());
+//                setFinalizeBasket setFinalizeBasket = new setFinalizeBasket();
+//                setFinalizeBasket.setFinalize(getActivity());
+//
+//
+////                SetterGetterNumberOrder setterGetterNumberOrder = new SetterGetterNumberOrder(getActivity());
+////                setterGetterNumberOrder.emptyNumberOrder();
+//
+//
+//                Intent intent = new Intent(getActivity(), MainActivity.class);
+//                intent.putExtra("NameActivity", "BasketFragment");
+//                getActivity().startActivity(intent);
+                getToken token = new getToken();
+                LoginSignupAlert loginAlert = new LoginSignupAlert();
 
+                if (token.Ok(getActivity())) {
+                    Intent intent = new Intent(getActivity(), BasketMiddleActivity.class);
+                    intent.putExtra("NameActivity", "BasketFragment");
+                    getActivity().startActivity(intent);
 
-//                SetterGetterNumberOrder setterGetterNumberOrder = new SetterGetterNumberOrder(getActivity());
-//                setterGetterNumberOrder.emptyNumberOrder();
-
-
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                intent.putExtra("NameActivity", "BasketFragment");
-                getActivity().startActivity(intent);
-
+                    setBasket2 setBasket2 = new setBasket2();
+                    setBasket2.register(getActivity());
+                } else {
+                    loginAlert.alertShow(getActivity(), ItemActivity.class);
+                }
 
                 // LoginSignupAlert loginSignupAlert = new LoginSignupAlert();
                 //  loginSignupAlert.alertShow(getActivity(), MainActivity.class);

@@ -61,6 +61,7 @@ public class getRow2 {
         internetCheck.CheckNet(context);
 
         final String urlJsonArray = context.getString(R.string.site) + "/api/Product/DynamicCategories";
+        Log.i("mohsenjamali", "onResponseErrorNewest: " + urlJsonArray);
         recyclerViewlist.setVisibility(View.INVISIBLE);
         ProgressBar.setVisibility(View.VISIBLE);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, urlJsonArray,

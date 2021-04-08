@@ -142,7 +142,7 @@ public class AboutDesignerActivity extends AppCompatActivity {
         }
 //        getToken token = new getToken();
 //        if (!token.Ok(AboutDesignerActivity.this)) {
-//        BadgeCounter.setVisibility(View.GONE);
+        BadgeCounter.setVisibility(View.GONE);
         // }
         // set Basket icon button
         ImageView basket_icon_bar = findViewById(R.id.basket_icon);

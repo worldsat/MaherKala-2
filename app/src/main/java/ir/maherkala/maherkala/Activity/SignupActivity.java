@@ -40,13 +40,13 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email.getText().toString()).matches()) {
-                    email.setError(getString(R.string.error_email));
-                } else if (password.getText().toString().length() < 6) {
-                    password.setError(getString(R.string.error_password_short));
-                } else if (password.getText().toString().isEmpty()) {
-                    password.setError(getString(R.string.error_password));
-                } else if (name.getText().toString().length() < 3) {
+//                if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email.getText().toString()).matches()) {
+//                    email.setError(getString(R.string.error_email));
+//                } else if (password.getText().toString().length() < 6) {
+//                    password.setError(getString(R.string.error_password_short));
+//                } else if (password.getText().toString().isEmpty()) {
+//                    password.setError(getString(R.string.error_password));
+                  if (name.getText().toString().length() < 3) {
                     name.setError(getString(R.string.error_name_short));
                 } else if (name.getText().toString().isEmpty()) {
                     name.setError(getString(R.string.error_name));
@@ -56,14 +56,14 @@ public class SignupActivity extends AppCompatActivity {
                     address.setError(getString(R.string.error_address_short));
                 } else if (address.getText().toString().isEmpty()) {
                     address.setError(getString(R.string.error_address));
-                } else if (tell.getText().toString().length() < 8) {
-                    tell.setError(getString(R.string.error_tell));
+//                } else if (tell.getText().toString().length() < 8) {
+//                    tell.setError(getString(R.string.error_tell));
                 } else if (postal.getText().toString().length() < 8) {
                     postal.setError(getString(R.string.error_postal));
                 } else {
 
                     setRegisterUser registerUser = new setRegisterUser();
-                    registerUser.register(SignupActivity.this, name.getText().toString(), password.getText().toString(), mobile.getText().toString(), address.getText().toString(), postal.getText().toString(), tell.getText().toString(), email.getText().toString(), progressBar, signup, MainActivity.class);
+                    registerUser.register(SignupActivity.this, name.getText().toString(), mobile.getText().toString(), address.getText().toString(), postal.getText().toString(),progressBar,signup, MainActivity.class);
 
                 }
 

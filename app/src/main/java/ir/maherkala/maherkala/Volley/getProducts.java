@@ -68,7 +68,7 @@ public class getProducts {
 
                     @Override
                     public void onResponse(String response) {
-
+                        Log.i("moh3n", "onResponseGetProducts: "+response);
                         try {
                             recyclerViewlist.setVisibility(View.VISIBLE);
                             // tryagain_txt.setVisibility(View.GONE);

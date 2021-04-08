@@ -68,7 +68,7 @@ public class getNews {
 
                     @Override
                     public void onResponse(String response) {
-
+                        Log.i("moh3n", "onResponse: "+response);
                         try {
                             recyclerViewlist.setVisibility(View.VISIBLE);
                             // tryagain_txt.setVisibility(View.GONE);

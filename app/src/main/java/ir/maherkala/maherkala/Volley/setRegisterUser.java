@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import ir.maherkala.maherkala.Activity.InternetActivity;
+import ir.maherkala.maherkala.Activity.Login2Activity;
 import ir.maherkala.maherkala.Activity.MainActivity;
 import ir.maherkala.maherkala.Engine.SnakBar;
 import ir.maherkala.maherkala.R;
@@ -28,7 +29,7 @@ import ir.maherkala.maherkala.R;
 public class setRegisterUser {
 
 
-    public void register(final Context context, final String name, final String password, final String mobile, final String address, final String postal, final String tell, final String email, final ProgressBar ProgressBar, final Button send, final Class className) {
+    public void register(final Context context, final String name, final String mobile, final String address, final String postal, final ProgressBar ProgressBar, final Button send, final Class className) {
 
         InternetActivity internetCheck = new InternetActivity();
         internetCheck.CheckNet(context);
@@ -47,29 +48,38 @@ public class setRegisterUser {
                         ProgressBar.setVisibility(View.GONE);
                         send.setText(context.getString(R.string.signupButton));
                         SnakBar snakBar = new SnakBar();
-
+                        Log.i("moh3n", "onResponse: " + response);
                         switch (response) {
-                            case "{\"Message\":0}":
+                            case "{\"Message\":1}":
 
                                 // Intent intent = new Intent(context, className);
-                                getToken getToken = new getToken();
-                                getToken.connect(context, email, password);
+//                                getToken getToken = new getToken();
+//                                getToken.connect(context);
                                 Toast.makeText(context, context.getString(R.string.signupOk), Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(context, MainActivity.class);
+                                Intent intent = new Intent(context, Login2Activity.class);
+                                intent.putExtra("Mobile", mobile);
                                 context.startActivity(intent);
 
 
                                 break;
-                            case "{\"Message\":1}":
+//                            case "{\"Message\":1}":
 
-                                snakBar.snakShow(context, context.getString(R.string.error_email_repetetive));
+//                                snakBar.snakShow(context, context.getString(R.string.error_email_repetetive));
 
-                                break;
+//                                break;
                             case "{\"Message\":2}":
 
                                 snakBar.snakShow(context, context.getString(R.string.error_mobile_repetetive));
 
                                 break;
+                        }
+                        if (response.contains("\"Message\":0")) {
+                            Toast.makeText(context, context.getString(R.string.signupOk), Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(context, Login2Activity.class);
+                            intent.putExtra("Mobile", mobile);
+                            context.startActivity(intent);
+                        } else if (response.contains("\"Message\":1")) {
+                            snakBar.snakShow(context, context.getString(R.string.error_mobile_repetetive));
                         }
                     }
 
@@ -89,11 +99,11 @@ public class setRegisterUser {
                 Map<String, String> MyData = new HashMap<>();
                 MyData.put("Fullname", name);
                 MyData.put("Address", address);
-                MyData.put("Password", password);
-                MyData.put("PhoneNumber", tell);
+//                MyData.put("Password", password);
+//                MyData.put("PhoneNumber", tell);
                 MyData.put("Mobile", mobile);
                 MyData.put("PostalCode", postal);
-                MyData.put("Email", email);
+//                MyData.put("Email", email);
 
                 return MyData;
             }
@@ -109,3 +119,4 @@ public class setRegisterUser {
 
 
 }
+

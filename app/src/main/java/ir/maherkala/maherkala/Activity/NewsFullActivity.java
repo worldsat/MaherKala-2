@@ -126,10 +126,10 @@ public class NewsFullActivity extends AppCompatActivity {
         } else {
             BadgeCounter.setVisibility(View.GONE);
         }
-        getToken token = new getToken();
-        if (!token.Ok(NewsFullActivity.this)) {
-            BadgeCounter.setVisibility(View.GONE);
-        }
+//        getToken token = new getToken();
+//        if (!token.Ok(NewsFullActivity.this)) {
+//            BadgeCounter.setVisibility(View.GONE);
+//        }
         // set Basket icon button
         ImageView basket_icon_bar = findViewById(R.id.basket_icon);
 

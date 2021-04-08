@@ -196,6 +196,7 @@ public class AdvancedSearchActivity extends AppCompatActivity implements Adapter
         final TextView txtGheymat = ((Activity) context).findViewById(R.id.txtGheymat);
         rangeGheymat.setMaxValue(27);
 
+        // set listener
         rangeGheymat.setOnRangeSeekbarChangeListener(new OnRangeSeekbarChangeListener() {
             @Override
             public void valueChanged(Number minValue, Number maxValue) {
@@ -209,14 +210,14 @@ public class AdvancedSearchActivity extends AppCompatActivity implements Adapter
 //                if (String.valueOf(minValue).equals("0")) {
 //                    gheymat_ta = "بی نهایت";
 //                } else {
-                gheymat_ta = gheymat_ta + getString(R.string.currency);
+                gheymat_ta = gheymat_ta + " تومان ";
 //                }
 //                if (String.valueOf(maxValue).equals("27") && String.valueOf(minValue).equals("0")) {
 //
 //                    txtGheymat.setText(" بدون محدودیت");
 //
 //                } else {
-                // Log.i("mohsenjamali", "valueChanged: " + foroshYaEjare);
+                Log.i("mohsenjamali", "valueChanged: " + foroshYaEjare);
                 String gheymat_kol = foroshYaEjare + gheymat_az + " تا " + gheymat_ta;
                 txtGheymat.setText(gheymat_kol);
 //                }

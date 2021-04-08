@@ -105,7 +105,7 @@ public class getBasket {
                                     NameItems.add(person.getString("ProductName"));
                                     PriceItems.add(person.getString("UnitPrice"));
                                     IdItems.add(person.getString("Id"));
-                                    QuantityItems.add(person.getString("Qty"));
+//                                    QuantityItems.add(person.getString("Qty"));
                                     ImageItems.add(person.getString("Thumbnail"));
 
                                     SetterGetterNumberOrder.setNumberOrder(person.getString("Qty"), "+");

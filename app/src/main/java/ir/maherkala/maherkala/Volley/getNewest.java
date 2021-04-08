@@ -67,7 +67,7 @@ public class getNewest {
 
                     @Override
                     public void onResponse(String response) {
-
+                        Log.i("moh3n", "onResponseNew: "+response);
                         try {
                             recyclerViewlist.setVisibility(View.VISIBLE);
                             // tryagain_txt.setVisibility(View.GONE);

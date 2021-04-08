@@ -73,8 +73,8 @@ public class setBasket2 {
 
                 Log.i("moh3", "onClick: " + managementBasket1.getListBasketItems());
 
-//                MyData.put("Api_token", sp.getString("token", "nothing"));
-                MyData.put("Api_token", "808d256b0db260437f0858f05960f82c863b");
+                MyData.put("Api_token", sp.getString("token", "nothing"));
+//                MyData.put("Api_token", "808d256b0db260437f0858f05960f82c863b");
                 Log.i("moh3n", "getParams: " + MyData);
                 return MyData;
             }
